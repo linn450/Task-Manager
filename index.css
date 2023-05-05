@@ -1,4 +1,8 @@
 
+/* no bulleted points*/
+ul {
+    list-style: none;
+  }
 
 :root {
     /* Default theme colors */
@@ -12,7 +16,7 @@
     --primary-color: #F78FB3;
     --secondary-color: #FCE4EC;
     --text-color: #7D4E57;
-    background-image: url('/Pictures/Sakura.gif');
+    --background-image: url('/Pictures/Sakura.gif');
   }
   
   /* Cyberpunk theme */
