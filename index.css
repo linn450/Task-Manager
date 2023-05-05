@@ -1,0 +1,63 @@
+
+
+:root {
+    /* Default theme colors */
+    --primary-color: #0074D9;
+    --secondary-color: #FF4136;
+    --text-color: #333;
+  }
+  
+  /* Sakura theme */
+  body.sakura {
+    --primary-color: #F78FB3;
+    --secondary-color: #FCE4EC;
+    --text-color: #7D4E57;
+    background-image: url('/Pictures/Sakura.gif');
+  }
+  
+  /* Cyberpunk theme */
+  body.cyberpunk {
+    --primary-color: #14FFEC;
+    --secondary-color: #DA70D6;
+    --text-color: #E8E8E8;
+  }
+  
+  /* Academia theme */
+  body.academia {
+    --primary-color: #3498DB;
+    --secondary-color: #F1C40F;
+    --text-color: #212F3C;
+  }
+  
+  .content {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 20px;
+  }
+  
+  .theme-switcher {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .theme-switcher button {
+    margin: 0 10px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+ 
+  .task-list {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+  }
+  
+  .task-list button {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+  }
+
