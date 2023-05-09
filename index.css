@@ -1,67 +1,36 @@
+body {      
+  background: url("./Pictures/Totoro.gif") center top no-repeat;
+  background-size: cover;
+}
 
-/* no bulleted points*/
+#add-task-form {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  color: black;
+  opacity: 75%;
+}
+
 ul {
-    list-style: none;
-  }
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
-:root {
-    /* Default theme colors */
-    --primary-color: #0074D9;
-    --secondary-color: #FF4136;
-    --text-color: #333;
-  }
-  
-  /* Sakura theme */
-  body.sakura {
-    --primary-color: #F78FB3;
-    --secondary-color: #FCE4EC;
-    --text-color: #7D4E57;
-    --background-image: url('/Pictures/Sakura.gif');
-  }
-  
-  /* Cyberpunk theme */
-  body.cyberpunk {
-    --primary-color: #14FFEC;
-    --secondary-color: #DA70D6;
-    --text-color: #E8E8E8;
-  }
-  
-  /* Academia theme */
-  body.academia {
-    --primary-color: #3498DB;
-    --secondary-color: #F1C40F;
-    --text-color: #212F3C;
-  }
-  
-  .content {
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    padding: 20px;
-  }
-  
-  .theme-switcher {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .theme-switcher button {
-    margin: 0 10px;
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
- 
-  .task-list {
-    background-color: var(--primary-color);
-    color: var(--text-color);
-  }
-  
-  .task-list button {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-  }
+#task-list {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  opacity: 75%;
+}
 
+.button {
+  background-color: #e7e7e7; 
+  color: black;
+  font-size: 16px;
+  border: 2px solid #4CAF50;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}

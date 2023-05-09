@@ -2,6 +2,8 @@
 const addTaskForm = document.getElementById('add-task-form');
 const taskList = document.getElementById('task-list');
 
+
+
 addTaskForm.addEventListener('submit', function(event) {
   event.preventDefault();
   const newTask = document.getElementById('new-task').value;
@@ -13,6 +15,8 @@ addTaskForm.addEventListener('submit', function(event) {
   taskList.appendChild(li);
   addTaskForm.reset();
 });
+
+
 
 taskList.addEventListener('click', function(event) {
   if (event.target.tagName === 'INPUT' && event.target.type === 'checkbox') {
@@ -29,23 +33,3 @@ taskList.addEventListener('click', function(event) {
   }
 });
 
-//switching themes
-const sakuraButton = document.getElementById('sakura-theme');
-const cyberpunkButton = document.getElementById('cyberpunk-theme');
-const academiaButton = document.getElementById('academia-theme');
-const body = document.body;
-
-sakuraButton.addEventListener('click', function() {
-  body.classList.remove('cyberpunk', 'academia');
-  body.classList.add('sakura');
-});
-
-cyberpunkButton.addEventListener('click', function() {
-  body.classList.remove('sakura', 'academia');
-  body.classList.add('cyberpunk');
-});
-
-academiaButton.addEventListener('click', function() {
-  body.classList.remove('sakura', 'cyberpunk');
-  body.classList.add('academia');
-});
